@@ -1,0 +1,32 @@
+html, body {
+    background-color: lightgray;
+}
+
+.height-1 {
+    height: 4rem;
+}
+
+.height-2 {
+    height: 6rem;
+}
+
+.width-1 {
+    width: 4rem;
+}
+
+.width-2 {
+    width: 6rem;
+}
+
+.truncate-ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icon-topright {
+    position: absolute;
+    right: 1.2rem;
+    top: 1.2rem;
+    cursor: pointer;
+}

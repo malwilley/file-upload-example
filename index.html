@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>File Upload Example</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.6.2/css/bulma.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/ace-css/css/ace.min.css" />
+    <link rel="stylesheet" href="./main.css" />
+</head>
+
+<body>
+    <section class="section">
+        <div class="container center">
+            <div>
+                <h1 class="title">Total size</h1>
+                <h2 id="total-size" class="subtitle mb3">0 bytes</h2>
+            </div>
+            <label for="upload-input" class="button is-primary mb2">
+                <span class="icon">
+                    <i class="fa fa-upload" aria-hidden="true"></i>
+                </span>
+                <span>Select a file</span>
+            </label>
+            <input id="upload-input" type="file" class="display-none" onchange="onFileSelect(this.files)" />
+        </div>
+    </section>
+    <section class="section">
+        <div class="container center">
+            <div class="buttons has-addons flex justify-center">
+                <span id="btn-tile" class="button is-info" onclick="viewTiles()">Tile view</span>
+                <span id="btn-list" class="button" onclick="viewList()">List view</span>
+            </div>
+            <div id="file-container" class="container flex justify-start flex-wrap">
+                <!-- File tiles get appended here -->
+            </div>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>
