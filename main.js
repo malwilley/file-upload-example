@@ -74,7 +74,7 @@ function mapListItemHtml(fileInfo) {
     return `<div class="col-12">
                 <div class="card m1">
                     <i class="fa fa-trash icon-topright" aria-label="remove file" onclick="removeTile(${fileInfo.id})"></i>
-                    <div class="card-content flex justify-between">
+                    <div class="card-content flex justify-between truncate">
                         <div class="flex items-center">
                             <div class="height-1 width-1 flex justiy-center items-center">
                                 ${mapTileImageHtml(fileInfo)}
